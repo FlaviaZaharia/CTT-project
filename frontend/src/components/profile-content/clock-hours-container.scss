@@ -1,0 +1,28 @@
+.ch-cont {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+  }
+  .filter {
+    display: flex;
+    button {
+      margin: 10px;
+      outline: none;
+      cursor: pointer;
+      background: none;
+      border: 0;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      padding-bottom: 5px;
+    }
+    #isSelected {
+      border-bottom: 3px solid #d96846;
+    }
+  }
+}

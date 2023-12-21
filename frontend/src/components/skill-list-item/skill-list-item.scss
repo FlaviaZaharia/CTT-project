@@ -1,0 +1,41 @@
+.skill-list-container {
+  min-width:483px;
+  margin: 15px 0px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0 0 5px 2px #A9A9A9;
+  h4 {
+    margin: 0;
+    font-size: 12px;
+  }
+  p {
+    margin-bottom: 0;
+    margin-top: 5px;
+    font-size: 12px;
+  }
+  .exp-part {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    p {
+      margin-left: 20px;
+      margin-top: 0px;
+    }
+  }
+  .edit-button-img {
+    button{
+      cursor: pointer;
+      outline: none;
+      background-color: transparent;
+      border:0px;
+    }
+   
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}

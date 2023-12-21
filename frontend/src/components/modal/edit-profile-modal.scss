@@ -1,0 +1,147 @@
+.modal {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgba(87, 82, 85, 0.8);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .modal-content {
+    width:650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    .photo-div{
+      .custom-file-upload {
+        margin-top: -55px;
+        border-radius: 50%;
+        display: inline-block;
+        position: relative;
+        padding: 6px;
+        cursor: pointer;
+        background-color: #fff;
+        border: 3px solid #d96846;
+        .img-wrap {
+          position: relative;
+          width: 128px;
+          height: 128px;
+          overflow: hidden;
+          border-radius: 50%;
+        }
+        .img-upload:before {
+          content: url("../../assets/upload.png");
+          font-size: 12px;
+          position: absolute;
+          padding-top: 60px;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          color: #63d3a6;
+          width: 128px;
+          height: 128px;
+          border-radius: 50%;
+          opacity: 0;
+          transition: 0.5s ease;
+          background-color: #fff;
+        }
+        .img-upload:hover:before {
+          opacity: 0.75;
+        }
+        input[type="file"] {
+          display: none;
+        }
+        img {
+          width: auto;
+          height: 100%;
+        }
+      }
+    }
+    .name-section {
+        display:flex;
+      .input-field {
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+        margin:10px 0px 20px;
+       #firstName{
+           margin-right:20px;
+       }
+        label {
+          padding: 10px 0;
+          .star {
+            color: #e59560;
+            padding-left: 3px;
+          }
+        }
+        input {
+          outline: none;
+          border: 1px solid #d3d3d3;
+          border-radius: 20px;
+          padding: 10px 10px;
+        }
+        input:hover {
+          box-shadow: 0 0 5px 2px #ffd5af;
+        }
+        .error-message {
+          color: red;
+          font-size: 12px;
+          max-width: 200px;
+          margin: 4px 0 0;
+          i {
+            padding-right: 3px;
+          }
+        }
+      }
+    }
+    .location-section{
+        .ReactFlagsSelect-module_selectBtn__19wW7{
+          border-radius: 10px;
+        }
+    }
+    .button-area{
+        display: flex;
+        justify-content: center;
+        margin:20px 0;
+        .cancel-button{
+          transition: transform .2s;
+          min-width:65px;
+          outline:none;
+          background-color: white;
+          border:2px solid #e59560;
+          border-radius: 8px;
+          cursor: pointer;
+          padding:10px;
+          font-family: "Montserrat", sans-serif;
+          margin-right:20px;
+          font-size: 16px;
+        }
+        .cancel-button:hover{
+          transform: scale(1.1);
+        }
+        .save-button{
+          transition: transform .2s;
+          min-width:65px;
+          outline:none;
+          background-color: #d96846;
+          border:2px solid #d96846;
+          border-radius: 10px;
+          cursor: pointer;
+          padding:10px 15px;
+          font-family: "Montserrat", sans-serif;
+          color:white;
+          font-size: 16px;
+        }
+        .save-button:hover{
+          transform: scale(1.1);
+        }
+    }
+  }
+}

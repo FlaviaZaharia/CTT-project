@@ -1,0 +1,135 @@
+.profile-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 8px;
+  //min-width: 800px;
+  width: 75%;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 5px 2px #d3d3d3;
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 20px;
+  .photo-name-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30px;
+    align-items: center;
+    .custom-file-upload {
+      margin-top: -55px;
+      border-radius: 50%;
+      display: inline-block;
+      position: relative;
+      padding: 6px;
+      background-color: #fff;
+      border: 3px solid #d96846;
+      .img-wrap {
+        position: relative;
+        width: 128px;
+        height: 128px;
+        overflow: hidden;
+        border-radius: 50%;
+      }
+      input[type="file"] {
+        display: none;
+      }
+      img {
+        width: auto;
+        height: 100%;
+      }
+    }
+    h3 {
+      margin: 10px 5px;
+      text-align: center;
+    }
+    .location-div {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+      p {
+        margin: 0;
+        padding-left: 5px;
+        color: #a0a0a0;
+        font-size: 16px;
+      }
+    }
+  }
+  .project-section {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    border-top: 1px solid #d3d3d3;
+    h4 {
+      background-color: white;
+      margin: -15px 0px 0px;
+      padding: 0px 20px;
+    }
+    .project-list {
+      padding-top: 20px;
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction:column;
+      button{
+        margin:5px 0;
+        cursor: pointer;
+        outline:none;
+        border:0;
+        background-color:transparent;
+        font-family: "Montserrat", sans-serif;
+        font-weight:500;
+      }
+      div {
+        ul {
+          list-style: none;
+          li{
+            padding:5px 0;
+          }
+        }
+      }
+      p {
+        color: #d3d3d3;
+      }
+    }
+  }
+  .team-section {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid #d3d3d3;
+    h4 {
+      background-color: white;
+      margin: -15px 0px 0px;
+      padding: 0px 20px;
+    }
+    .team-list {
+      p {
+        color: #d3d3d3;
+      }
+    }
+  }
+  .edit-button {
+    padding: 20px;
+    margin-bottom: 30px;
+    outline: none;
+    border-radius: 8px;
+    border: 2px solid white;
+    background-color: #d96846;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    transition: transform 0.2s;
+    cursor: pointer;
+  }
+  .edit-button:hover {
+    transform: scale(1.1);
+  }
+}

@@ -1,0 +1,16 @@
+.profile-wrapper {
+  background-color: #f6f4e8;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  @media screen and (max-width:1280px){
+    flex-direction: column;
+  }
+  .profile-details-wrapper {
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

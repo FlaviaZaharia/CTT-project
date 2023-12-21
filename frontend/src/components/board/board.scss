@@ -1,0 +1,37 @@
+.board-container {
+  display: flex;
+  background-color: #bacec1;
+  overflow-x: auto;
+  height:100vh;
+  overflow-y: hidden;
+  .board-container-columns {
+    display: flex;
+    justify-content: flex-start;
+    height: 100%;
+    padding: 20px;
+  }
+  .new-column {
+    margin-top: 77px;
+    display: flex;
+    div {
+      input {
+        outline: none;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        border: 0px;
+        padding: 10px;
+        font-family: "Montserrat", sans-serif;
+      }
+      button {
+        display: flex;
+        justify-content: center;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        padding: 6px 10px;
+        background-color: #f0f0f0;
+        border: 0;
+        cursor: pointer;
+      }
+    }
+  }
+}

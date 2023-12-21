@@ -1,0 +1,36 @@
+.invalid-content {
+  background-color: #bacec1;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    font-family: "Montserrat", sans-serif;
+    padding:20px 10px 0px;
+    margin-bottom:0px;
+    text-align: center;
+    font-size: 40px;
+  }
+  .auth-text {
+    text-align: center;
+    font-size: 12px;
+    .auth-link {
+      color: black;
+    }
+    .auth-link:hover {
+      color: #e59560;
+    }
+  }
+  p{
+    font-size: 20px;
+    text-align:center;
+    font-family: "Montserrat", sans-serif;
+  }
+  img {
+    max-width: 600px;
+    @media only screen and (max-width: 768px) {
+      max-width: 300px;
+    }
+  }
+}
